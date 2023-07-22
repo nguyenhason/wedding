@@ -65,7 +65,7 @@
         <style>
             .wishes-section h2 {
                 color: #fff;
-                font-family: fantasy;
+                font-family: unset;
                 font-size: 70px;
                 font-weight: 600;
                 margin-bottom: 30px;
@@ -83,17 +83,20 @@
                 max-width: 75%;
                 position: absolute;
                 left: 48%;
-                top: 37%;
+                top: 33%;
                 transform: translate(-50%, -50%);
             }
 
-            .donate {
+            /* .donate {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 column-gap: 30px;
-                margin: 20px 48px 30px 48px;
+                margin: 20px 48px 30px 48px;    
+            } */
+            .donate {
+                padding-top: 80px;
+                background: #ebfdfb;
             }
-
             .donate1,
             .donate2 {
                 padding: 0px;
@@ -107,14 +110,10 @@
                 max-width: 100%;
                 height: 450px;
                 object-fit: cover;
-                padding-left: 20%;
+                padding-left: 1%;
             }
             .footer-style-1 .inner {
                 top: 60%;
-            }
-
-            .footer-style-1 h2 {
-                display: none;
             }
         </style>
     </head>
@@ -253,7 +252,7 @@
                         <div class="col col-lg-6 col-lg-offset-3">
                             <div class="text">
                                 <h2>
-                                    Sảnh QUEEN 3 Nhà hàng QUEEN PLAZA KỲ HOÀ
+                                    Sảnh QUEEN 3 - Nhà hàng QUEEN PLAZA KỲ HOÀ
                                 </h2>
                                 <h3>Đón khách: 17 giờ 00</h3>
                                 <h3>Đãi tiệc: 18 giờ 00</h3>
@@ -279,17 +278,18 @@
                     <h2 id="thank">Thank You!</h2>
                 </div>
             </footer>
+
             <div class="donate" id="donate_anchor">
                 <div class="donate1" id="donate1_anchor">
                     <img
-                        src="./assets/image/son.jpg"
+                        src="./assets/image/uyen.jpg"
                         alt
                         class="donate__thumb"
                     />
                 </div>
                 <div class="donate2" id="donate2_anchor">
                     <img
-                        src="./assets/image/uyen.jpg"
+                        src="./assets/image/son.jpg"
                         alt
                         class="donate__thumb"
                     />
@@ -318,13 +318,12 @@
             const showBtn = document.querySelector("#show");
             const div1 = document.querySelector("#donate1_anchor");
             const div2 = document.querySelector("#donate2_anchor");
-            const h2 = document.querySelector("#thank");
             showBtn.addEventListener("click", () => {
                 div1.style.display = "block";
                 div2.style.display = "block";
-                h2.style.display = "block";
             });
         </script>
+
         <script src="https://weddingsonuyen.iwedding.info/templates/template8/js/jquery-plugin-collection.js?v=202306251"></script>
         <script src="https://weddingsonuyen.iwedding.info/common/calendar.js?v=202306251"></script>
         <script src="https://weddingsonuyen.iwedding.info/templates/template8/js/script.js?v=202306251"></script>
