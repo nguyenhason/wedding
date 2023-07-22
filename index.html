@@ -66,7 +66,7 @@
             .wishes-section h2 {
                 color: #fff;
                 font-family: unset;
-                font-size: 70px;
+                font-size: 60px;
                 font-weight: 600;
                 margin-bottom: 30px;
             }
@@ -94,6 +94,7 @@
                 margin: 20px 48px 30px 48px;    
             } */
             .donate {
+                display: none;
                 padding-top: 80px;
                 background: #ebfdfb;
             }
@@ -103,7 +104,6 @@
                 border-radius: 10px;
                 border: 16px solid #eaf6ff;
                 transition: 0.25s;
-                display: none;
             }
             .donate__thumb {
                 display: block;
@@ -252,7 +252,7 @@
                         <div class="col col-lg-6 col-lg-offset-3">
                             <div class="text">
                                 <h2>
-                                    Sảnh QUEEN 3 - Nhà hàng QUEEN PLAZA KỲ HOÀ
+                                    Sảnh QUEEN 3 Nhà hàng QUEEN PLAZA KỲ HOÀ
                                 </h2>
                                 <h3>Đón khách: 17 giờ 00</h3>
                                 <h3>Đãi tiệc: 18 giờ 00</h3>
@@ -316,17 +316,15 @@
 
         <script>
             const showBtn = document.querySelector("#show");
-            const div1 = document.querySelector("#donate1_anchor");
-            const div2 = document.querySelector("#donate2_anchor");
+            const div = document.querySelector("#donate_anchor");
             showBtn.addEventListener("click", () => {
-                div1.style.display = "block";
-                div2.style.display = "block";
+                div.style.display = "block";
             });
         </script>
 
         <script src="https://weddingsonuyen.iwedding.info/templates/template8/js/jquery-plugin-collection.js?v=202306251"></script>
         <script src="https://weddingsonuyen.iwedding.info/common/calendar.js?v=202306251"></script>
         <script src="https://weddingsonuyen.iwedding.info/templates/template8/js/script.js?v=202306251"></script>
-        <!-- <script src="https://weddingsonuyen.iwedding.info/common/bii.js?v=202306251"></script> -->
+        <script src="https://weddingsonuyen.iwedding.info/common/bii.js?v=202306251"></script>
     </body>
 </html>
