@@ -102,12 +102,6 @@
             .footer-style-1 .inner {
                 top: 60%;
             }
-
-            audio {
-                display: inline-block;
-                vertical-align: baseline;
-                margin: 0 auto 10px 20px;
-            }
         </style>
     </head>
 
@@ -130,19 +124,22 @@
                             >
                         </div>
                     </div>
-                    <audio controls autoplay loop preload="auto">
-                        <!-- <source
-                            src="https://cdn.biihappy.com/ziiweb/wedding-musics/BeautifulInWhite-ShaneFilan-524801.mp3"
-                            type="audio/mpeg"
-                        /> -->
-                        <source
-                            src="./assets/image/BeautifulInWhite-ShaneFilan-524801.mp3"
-                        />
-                    </audio>
                 </nav>
             </header>
+            <audio id="play-music">
+                <!-- <source
+                    src="https://cdn.biihappy.com/ziiweb/wedding-musics/BeautifulInWhite-ShaneFilan-524801.mp3"
+                    type="audio/mpeg"
+                /> -->
+                <source
+                    src="./assets/image/BeautifulInWhite-ShaneFilan-524801.mp3"
+                />
+            </audio>
 
-            <section class="hero-slider hero-style-1">
+            <section
+                class="hero-slider hero-style-1"
+                onclick="enableAutoplay()"
+            >
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">

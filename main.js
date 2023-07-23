@@ -307,3 +307,9 @@ if (
 	</div>
 	`);
     }
+// play music
+let vid = document.getElementById("play-music");
+function enableAutoplay() {
+    vid.autoplay = true;
+    vid.load();
+}
